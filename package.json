@@ -1,0 +1,19 @@
+{
+  "name": "hacktory.dev",
+  "version": "0.0.1",
+  "description": "Take and share notes while you learn with YouTube videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsarpy/hacktory.dev.git"
+  },
+  "author": "Gregory Sarpy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gsarpy/hacktory.dev/issues"
+  },
+  "homepage": "https://github.com/gsarpy/hacktory.dev#readme"
+}
