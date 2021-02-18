@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Jumbotron, Form, Label, Input, FormGroup } from 'reactstrap';
+import { Button, Container, Row, Col, Jumbotron, Form, Label, Input, FormGroup } from 'reactstrap';
 
 const Registration = (props) => {
   return (
@@ -27,6 +27,7 @@ const Registration = (props) => {
               <Label for="password_confirm">Confirm Password</Label>
               <Input type="password" name="password_confirm" id="password_confirm" />
             </FormGroup>
+            <Button>Sign Up</Button>
           </Form>
         </Col>
       </Row>
