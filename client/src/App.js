@@ -1,3 +1,6 @@
+import React from "react";
+import { Provider } from "react-redux";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -5,23 +8,16 @@ import {
   Link
 } from "react-router-dom";
 
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import { Container }  from "reactstrap";
-
 import Navigation     from "./layout/navigation";
 import Home           from "./layout/views/home";
 import Registration   from "./layout/views/registration";
 import NewVideo       from "./layout/views/newVideo";
 import VideoHome      from "./layout/views/videoHome";
 
-const client = new ApolloClient({
-  uri: 'https://48p1r2roz4.sse.codesandbox.io',
-  cache: new InMemoryCache()
-});
-
 function App() {
   return (
-    <ApolloProvider client={client}>
+    <Provider store={store}>
       <Router>
         <div>
           <Navigation />
@@ -43,7 +39,7 @@ function App() {
           </Container>
         </div>
       </Router>
-    </ApolloProvider>
+    </Provider>
   );
 }
 
