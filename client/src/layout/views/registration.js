@@ -1,6 +1,11 @@
 import React from 'react';
 import { Button, Container, Row, Col, Jumbotron, Form, Label, Input, FormGroup } from 'reactstrap';
 
+const submitRegistration = (e) => {
+  e.preventDefault();
+  console.log("Registered!", e.target);
+}
+
 const Registration = (props) => {
   return (
     <div>
@@ -27,7 +32,7 @@ const Registration = (props) => {
               <Label for="password_confirm">Confirm Password</Label>
               <Input type="password" name="password_confirm" id="password_confirm" />
             </FormGroup>
-            <Button>Sign Up</Button>
+            <Button onClick={submitRegistration}>Sign Up</Button>
           </Form>
         </Col>
       </Row>
