@@ -1,0 +1,5 @@
+/* 
+    This is a placeholder for a future feature.
+    The goal is to eventually allow users to have
+    a blogging space in addition to posting videos.
+*/
