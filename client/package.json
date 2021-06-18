@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
     "bootstrap": "^4.6.0",
+    "email-validator": "^2.0.4",
     "graphql": "^15.5.0",
     "node-sass": "^5.0.0",
     "react": "^16.14.0",

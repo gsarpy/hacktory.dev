@@ -12,6 +12,8 @@ import {
   Link
 } from "react-router-dom";
 
+import emailValidation from './utilities/emailValidation';
+
 // IMPORT COMPONENTS
 import SideBarNav from './components/layout/SidebarNav';
 import TopNav from './components/layout/TopNav';
@@ -19,11 +21,13 @@ import TopNav from './components/layout/TopNav';
 // IMPORT VIEWS
 import HomeLoggedOut from './components/views/Home/HomeLoggedOut';
 
+const emailTest = emailValidation("gregsarpy@gmail.com");
+console.log("EMAIL TEST", emailTest);
 
 function App() {
   return (
     <Provider store={store}>
-      <Container fluid maxWidth={false} disableGutters={true}>
+      <Container fluid={"true"} maxWidth={false} disableGutters={true}>
         <Router>
           <TopNav />
           <Switch>
