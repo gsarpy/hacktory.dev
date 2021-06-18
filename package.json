@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gsarpy/hacktory.dev.git"
+    "url": "git@github.com:gsarpy/hacktory.dev.git"
   },
   "author": "Gregory Sarpy",
   "license": "MIT",
