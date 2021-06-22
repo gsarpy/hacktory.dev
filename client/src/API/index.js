@@ -1,5 +1,3 @@
-const checkEmail = (email) => {
-  return true;
-}
+const checkEmail = (email) => true;
 
 export default checkEmail;

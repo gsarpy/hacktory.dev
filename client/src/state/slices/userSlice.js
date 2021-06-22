@@ -9,14 +9,14 @@ export const userSlice = createSlice({
     bio: '',
     favorites: [],
     following: [],
-    friends: []
+    friends: [],
   },
-  
+
   reducers: {
     createUser: (state, action) => {
       state = action.payload;
-    }
-  }
+    },
+  },
 });
 
 export default userSlice.reducer;

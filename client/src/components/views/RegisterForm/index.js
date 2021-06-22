@@ -18,15 +18,23 @@ export default function BasicTextFields() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-        <Grid item><h4>Register for free!</h4></Grid>
-        <Grid item><TextField id="email" label="Email" /></Grid>
-        <Grid item><TextField id="username" label="Username" /></Grid>
-        <Grid item><TextField id="password" type="password" label="Password" /></Grid>
-        <Grid item>
-          <Button variant="contained" color="primary">
-            Sign Up!
-          </Button>
-        </Grid>
+      <Grid item>
+        <h4>Register for free!</h4>
+      </Grid>
+      <Grid item>
+        <TextField id="email" label="Email" />
+      </Grid>
+      <Grid item>
+        <TextField id="username" label="Username" />
+      </Grid>
+      <Grid item>
+        <TextField id="password" type="password" label="Password" />
+      </Grid>
+      <Grid item>
+        <Button variant="contained" color="primary">
+          Sign Up!
+        </Button>
+      </Grid>
     </form>
   );
 }

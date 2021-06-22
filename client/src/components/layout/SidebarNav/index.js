@@ -45,7 +45,7 @@ export default function PermanentDrawerLeft() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      
+
       <Drawer
         className={classes.drawer}
         variant="permanent"
@@ -74,7 +74,6 @@ export default function PermanentDrawerLeft() {
           ))}
         </List>
       </Drawer>
-      
     </div>
   );
 }

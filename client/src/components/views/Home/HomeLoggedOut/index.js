@@ -18,13 +18,7 @@ const HomeLoggedOut = () => {
 
   return (
     <div className={classes.root}>
-      <Grid 
-        container 
-        spacing={0} 
-        align="center" 
-        justify="center" 
-        alignItems="center" 
-      >
+      <Grid container spacing={0} align="center" justify="center" alignItems="center">
         <Grid item xs={6}>
           <Introduction />
         </Grid>

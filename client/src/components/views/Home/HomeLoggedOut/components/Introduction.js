@@ -32,8 +32,9 @@ export default function Introduction() {
             Start tracking your learning!
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            We learn new things from many different sources. Hacktory let's you track it all
-            in one place. Take and share notes, ask and answer questions, and collaborate with other students.
+            We learn new things from many different sources. Hacktory let's you track it all in one
+            place. Take and share notes, ask and answer questions, and collaborate with other
+            students.
           </Typography>
         </CardContent>
       </CardActionArea>

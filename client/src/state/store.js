@@ -7,6 +7,6 @@ import courseReducer from './slices/courseSlice';
 export default configureStore({
   reducer: {
     course: courseReducer,
-    user: userReducer
-  }
+    user: userReducer,
+  },
 });

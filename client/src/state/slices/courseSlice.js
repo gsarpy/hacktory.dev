@@ -14,10 +14,8 @@ export const courseSlice = createSlice({
   },
 
   reducers: {
-    newVideo: (state, action) => {
-
-    }
-  }
+    newVideo: (state, action) => {},
+  },
 });
 
 export const { createVideo, updateVideo } = courseSlice.actions;
