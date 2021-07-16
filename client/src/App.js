@@ -1,34 +1,53 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { Container } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import store from './state/store';
+import { ThemeProvider, Container } from '@material-ui/core';
+import theme from './components/styles/theme.js';
 
-// IMPORT COMPONENTS
-import TopNav from './components/layout/TopNav';
+// Import Layout
+import Nav from './components/layout/nav';
 
-// IMPORT VIEWS
-import HomeLoggedOut from './components/views/Home/HomeLoggedOut';
+//Import Views
+import Home       from './components/views/home'; 
+import Register   from './components/views/register'; 
 
-function App() {
+const App = () => {
   return (
-    <Provider store={store}>
-      <Container fluid="true" maxWidth={false} disableGutters>
+    <>
+      <ThemeProvider theme={theme}>
         <Router>
-          <TopNav />
-          <Switch>
-            <Route path="/">
-              <Grid container>
-                <HomeLoggedOut />
-              </Grid>
-            </Route>
-          </Switch>
+          <Nav />
+          <Container> 
+            <Switch>
+              <Route path='/about'>
+                <h1>About</h1>
+              </Route>
+              <Route path='/register'>
+                <Register />
+              </Route>
+              <Route path='/login'>
+                <h1>Login</h1>
+              </Route>
+              <Route path='/course/:id'>
+                <h1>Course</h1>
+              </Route>
+              <Route path='/user/:username'>
+                <h1>User</h1>
+              </Route>
+              <Route path='/'>
+                <Home />
+              </Route>
+            </Switch>
+          </Container>
         </Router>
-      </Container>
-    </Provider>
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;
